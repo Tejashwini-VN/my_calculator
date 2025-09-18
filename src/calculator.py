@@ -10,6 +10,14 @@ def add(a, b):
 def subtract(a, b):
     """Subtract b from a"""
     return a - b
+def power(a, b):
+    return a ** b
+
+def square_root(a):
+    if a < 0:
+        raise ValueError("Cannot calculate square root of negative number")
+    return a ** 0.5
+
 
 def multiply(a, b):
     """Multiply two numbers with input validation and logging."""
